@@ -1,12 +1,572 @@
 let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
+let cart = document.querySelector('.shopping-cart');
 
 menu.onclick = () => {
     menu.classList.toggle('fa-times');
     navbar.classList.toggle('active');
 }
 
-// window.onscroll = () => {
-//     menu.classList.remove('fa-times');
-//     navbar.classList.remove('active');
-// }
+window.onscroll = () => {
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+}
+
+function loader() {
+    document.querySelector('.loader-container').classList.add('fade-out');
+}
+
+function fadeOut() {
+    setInterval(loader, 2000);
+}
+
+window.onload = fadeOut();
+
+document.querySelector('#cart-btn').onclick = () =>{
+   if (cart.style.display === "none") {
+    cart.style.display = "block";
+   } else {
+    cart.style.display = "none";
+   }
+}
+
+document.querySelector('#close-cart').onclick = () =>{
+    if (cart.style.display === "block") {
+        cart.style.display = "none";
+       } else {
+        cart.style.display = "block";
+       }
+}
+
+window.onscroll = () =>{
+   navbar.classList.remove('active');
+   cart.classList.remove('active');
+};
+
+// PIZZA SECTION
+// Margherita
+document.querySelector('#margherita').onclick = () =>{
+    var name = "Margherita";
+    var price;
+    var e = document.getElementById("margheritasize");
+    var value = e.value;
+    var size = e.options[e.selectedIndex].text;
+
+    if (value === "small") {
+        price = 10;
+    }
+    if (value === "medium") {
+        price = 14;
+    }
+    if (value === "large") {
+        price = 18;
+    }
+    if (value === "extraLarge") {
+        price = 20;
+    }
+
+    document.getElementById("pizzaname").innerHTML = name;
+    document.getElementById("pizzaprice").innerHTML = "£" + price;
+    document.getElementById("pizzasize").innerHTML = size;
+}
+
+// Pepperoni
+document.querySelector('#pepperoni').onclick = () =>{
+    var name = "Pepperoni";
+    var price;
+    var e = document.getElementById("pepperonisize");
+    var value = e.value;
+    var size = e.options[e.selectedIndex].text;
+
+    if (value === "small") {
+        price = 12;
+    }
+    if (value === "medium") {
+        price = 16;
+    }
+    if (value === "large") {
+        price = 20;
+    }
+    if (value === "extraLarge") {
+        price = 22;
+    }
+
+    document.getElementById("pizzaname").innerHTML = name;
+    document.getElementById("pizzaprice").innerHTML = "£" + price;
+    document.getElementById("pizzasize").innerHTML = size;
+}
+
+// Hawaiian
+document.querySelector('#hawaiian').onclick = () =>{
+    var name = "Hawaiian";
+    var price;
+    var e = document.getElementById("hawaiiansize");
+    var value = e.value;
+    var size = e.options[e.selectedIndex].text;
+
+    if (value === "small") {
+        price = 12;
+    }
+    if (value === "medium") {
+        price = 16;
+    }
+    if (value === "large") {
+        price = 20;
+    }
+    if (value === "extraLarge") {
+        price = 22;
+    }
+
+    document.getElementById("pizzaname").innerHTML = name;
+    document.getElementById("pizzaprice").innerHTML = "£" + price;
+    document.getElementById("pizzasize").innerHTML = size;
+}
+
+// The Shroom
+document.querySelector('#mushroom').onclick = () =>{
+    var name = "Mushroom";
+    var price;
+    var e = document.getElementById("mushroomsize");
+    var value = e.value;
+    var size = e.options[e.selectedIndex].text;
+
+    if (value === "small") {
+        price = 12;
+    }
+    if (value === "medium") {
+        price = 16;
+    }
+    if (value === "large") {
+        price = 20;
+    }
+    if (value === "extraLarge") {
+        price = 22;
+    }
+
+    document.getElementById("pizzaname").innerHTML = name;
+    document.getElementById("pizzaprice").innerHTML = "£" + price;
+    document.getElementById("pizzasize").innerHTML = size;
+}
+
+// The Avenger Special
+document.querySelector('#halloumiparmaham').onclick = () =>{
+    var name = "The Avenger Special";
+    var price;
+    var e = document.getElementById("halloumiparmahamsize");
+    var value = e.value;
+    var size = e.options[e.selectedIndex].text;
+
+    if (value === "small") {
+        price = 13;
+    }
+    if (value === "medium") {
+        price = 17;
+    }
+    if (value === "large") {
+        price = 21;
+    }
+    if (value === "extraLarge") {
+        price = 23;
+    }
+
+    document.getElementById("pizzaname").innerHTML = name;
+    document.getElementById("pizzaprice").innerHTML = "£" + price;
+    document.getElementById("pizzasize").innerHTML = size;
+}
+
+// The Caerbannog Classic
+document.querySelector('#veggie').onclick = () =>{
+    var name = "The Caerbannog Classic";
+    var price;
+    var e = document.getElementById("veggiesize");
+    var value = e.value;
+    var size = e.options[e.selectedIndex].text;
+
+    if (value === "small") {
+        price = 13;
+    }
+    if (value === "medium") {
+        price = 17;
+    }
+    if (value === "large") {
+        price = 21;
+    }
+    if (value === "extraLarge") {
+        price = 23;
+    }
+
+    document.getElementById("pizzaname").innerHTML = name;
+    document.getElementById("pizzaprice").innerHTML = "£" + price;
+    document.getElementById("pizzasize").innerHTML = size;
+}
+
+// The Meg
+document.querySelector('#anchovies').onclick = () =>{
+    var name = "The Meg";
+    var price;
+    var e = document.getElementById("anchovysize");
+    var value = e.value;
+    var size = e.options[e.selectedIndex].text;
+
+    if (value === "small") {
+        price = 12;
+    }
+    if (value === "medium") {
+        price = 16;
+    }
+    if (value === "large") {
+        price = 20;
+    }
+    if (value === "extraLarge") {
+        price = 22;
+    }
+
+    document.getElementById("pizzaname").innerHTML = name;
+    document.getElementById("pizzaprice").innerHTML = "£" + price;
+    document.getElementById("pizzasize").innerHTML = size;
+}
+
+// The Cloudy with a Chance
+document.querySelector('#meatlover').onclick = () =>{
+    var name = "The Cloudy With A Chance";
+    var price;
+    var e = document.getElementById("meatloversize");
+    var value = e.value;
+    var size = e.options[e.selectedIndex].text;
+
+    if (value === "small") {
+        price = 14;
+    }
+    if (value === "medium") {
+        price = 18;
+    }
+    if (value === "large") {
+        price = 22;
+    }
+    if (value === "extraLarge") {
+        price = 24;
+    }
+
+    document.getElementById("pizzaname").innerHTML = name;
+    document.getElementById("pizzaprice").innerHTML = "£" + price;
+    document.getElementById("pizzasize").innerHTML = size;
+}
+
+// The Chicken Run
+document.querySelector('#normalchicken').onclick = () =>{
+    var name = "The Chicken Run";
+    var price;
+    var e = document.getElementById("normalchickensize");
+    var value = e.value;
+    var size = e.options[e.selectedIndex].text;
+
+    if (value === "small") {
+        price = 12;
+    }
+    if (value === "medium") {
+        price = 16;
+    }
+    if (value === "large") {
+        price = 20;
+    }
+    if (value === "extraLarge") {
+        price = 22;
+    }
+
+    document.getElementById("pizzaname").innerHTML = name;
+    document.getElementById("pizzaprice").innerHTML = "£" + price;
+    document.getElementById("pizzasize").innerHTML = size;
+}
+
+// The Hot Fuzz
+document.querySelector('#bbqchicken').onclick = () =>{
+    var name = "The Hot Fuzz";
+    var price;
+    var e = document.getElementById("bbqchickensize");
+    var value = e.value;
+    var size = e.options[e.selectedIndex].text;
+
+    if (value === "small") {
+        price = 13;
+    }
+    if (value === "medium") {
+        price = 17;
+    }
+    if (value === "large") {
+        price = 21;
+    }
+    if (value === "extraLarge") {
+        price = 23;
+    }
+
+    document.getElementById("pizzaname").innerHTML = name;
+    document.getElementById("pizzaprice").innerHTML = "£" + price;
+    document.getElementById("pizzasize").innerHTML = size;
+}
+
+// The Sicario
+document.querySelector('#mexican').onclick = () =>{
+    var name = "The Sicario";
+    var price;
+    var e = document.getElementById("mexicansize");
+    var value = e.value;
+    var size = e.options[e.selectedIndex].text;
+
+    if (value === "small") {
+        price = 14;
+    }
+    if (value === "medium") {
+        price = 18;
+    }
+    if (value === "large") {
+        price = 22;
+    }
+    if (value === "extraLarge") {
+        price = 24;
+    }
+
+    document.getElementById("pizzaname").innerHTML = name;
+    document.getElementById("pizzaprice").innerHTML = "£" + price;
+    document.getElementById("pizzasize").innerHTML = size;
+}
+
+// The Mamma Mia
+document.querySelector('#greekpizza').onclick = () =>{
+    var name = "The Mamma Mia";
+    var price;
+    var e = document.getElementById("greekpizzasize");
+    var value = e.value;
+    var size = e.options[e.selectedIndex].text;
+
+    if (value === "small") {
+        price = 13;
+    }
+    if (value === "medium") {
+        price = 17;
+    }
+    if (value === "large") {
+        price = 21;
+    }
+    if (value === "extraLarge") {
+        price = 23;
+    }
+
+    document.getElementById("pizzaname").innerHTML = name;
+    document.getElementById("pizzaprice").innerHTML = "£" + price;
+    document.getElementById("pizzasize").innerHTML = size;
+}
+
+// The One True Ring
+document.querySelector('#hammushroompepper').onclick = () =>{
+    var name = "The One True Ring";
+    var price;
+    var e = document.getElementById("hammushroompeppersize");
+    var value = e.value;
+    var size = e.options[e.selectedIndex].text;
+
+    if (value === "small") {
+        price = 13;
+    }
+    if (value === "medium") {
+        price = 17;
+    }
+    if (value === "large") {
+        price = 21;
+    }
+    if (value === "extraLarge") {
+        price = 23;
+    }
+
+    document.getElementById("pizzaname").innerHTML = name;
+    document.getElementById("pizzaprice").innerHTML = "£" + price;
+    document.getElementById("pizzasize").innerHTML = size;
+}
+
+// The Little Italy
+document.querySelector('#carbonara').onclick = () =>{
+    var name = "The Little Italy";
+    var price;
+    var e = document.getElementById("carbonarasize");
+    var value = e.value;
+    var size = e.options[e.selectedIndex].text;
+
+    if (value === "small") {
+        price = 15;
+    }
+    if (value === "medium") {
+        price = 19;
+    }
+    if (value === "large") {
+        price = 23;
+    }
+    if (value === "extraLarge") {
+        price = 25;
+    }
+
+    document.getElementById("pizzaname").innerHTML = name;
+    document.getElementById("pizzaprice").innerHTML = "£" + price;
+    document.getElementById("pizzasize").innerHTML = size;
+}
+
+// Half and Half
+document.querySelector('#halfhalf').onclick = () =>{
+    var name = "Half And Half";
+    var price;
+    var e = document.getElementById("halfhalfsize");
+    var value = e.value;
+    var size = e.options[e.selectedIndex].text;
+
+    if (value === "small") {
+        price = 14;
+    }
+    if (value === "medium") {
+        price = 18;
+    }
+    if (value === "large") {
+        price = 22;
+    }
+    if (value === "extraLarge") {
+    }
+
+    document.getElementById("pizzaname").innerHTML = name;
+    document.getElementById("pizzaprice").innerHTML = "£" + price;
+    document.getElementById("pizzasize").innerHTML = size;
+}
+
+// STARTER SECTION
+// Garlic Bread with Cheese
+document.querySelector('#garliccheese').onclick = () =>{
+    var name = "Garlic Bread with Cheese";
+    var price = 12;
+
+    document.getElementById("startername").innerHTML = name;
+    document.getElementById("starterprice").innerHTML = "£" + price;
+}
+
+// Doughballs
+document.querySelector('#doughballs').onclick = () =>{
+    var name = "Doughballs";
+    var price = 6;
+
+    document.getElementById("startername").innerHTML = name;
+    document.getElementById("starterprice").innerHTML = "£" + price;
+}
+
+// Chicken Bites
+document.querySelector('#chickenbites').onclick = () =>{
+    var name = "Chicken Bites";
+    var price = 8;
+
+    document.getElementById("startername").innerHTML = name;
+    document.getElementById("starterprice").innerHTML = "£" + price;
+}
+
+// Wedges
+document.querySelector('#wedges').onclick = () =>{
+    var name = "Wedges";
+    var price = 7;
+
+    document.getElementById("startername").innerHTML = name;
+    document.getElementById("starterprice").innerHTML = "£" + price;
+}
+
+// Sweet Potato Wedges
+document.querySelector('#sweetpotatowedges').onclick = () =>{
+    var name = "Sweet Potato Wedges";
+    var price = 8;
+
+    document.getElementById("startername").innerHTML = name;
+    document.getElementById("starterprice").innerHTML = "£" + price;
+}
+
+// DESSERT SECTION
+// Cheesecake
+document.querySelector('#cheesecake').onclick = () =>{
+    var name = "Cheesecake";
+    var price = 10;
+
+    document.getElementById("dessertname").innerHTML = name;
+    document.getElementById("dessertprice").innerHTML = "£" + price;
+}
+
+// Carrot Cake
+document.querySelector('#carrotcake').onclick = () =>{
+    var name = "Carrot Cake";
+    var price = 6;
+
+    document.getElementById("dessertname").innerHTML = name;
+    document.getElementById("dessertprice").innerHTML = "£" + price;
+}
+
+// Lava Cake
+document.querySelector('#lavacake').onclick = () =>{
+    var name = "Lava Cake";
+    var price = 8;
+
+    document.getElementById("dessertname").innerHTML = name;
+    document.getElementById("dessertprice").innerHTML = "£" + price;
+}
+
+// Cookies
+document.querySelector('#cookies').onclick = () =>{
+    var name = "Cookies";
+    var price = 7;
+
+    document.getElementById("dessertname").innerHTML = name;
+    document.getElementById("dessertprice").innerHTML = "£" + price;
+}
+
+// Tiramisu
+document.querySelector('#tiramisu').onclick = () =>{
+    var name = "Tiramisu";
+    var price = 8;
+
+    document.getElementById("dessertname").innerHTML = name;
+    document.getElementById("dessertprice").innerHTML = "£" + price;
+}
+
+// DRINKS SECTION
+// Coca-Cola
+document.querySelector('#coke').onclick = () =>{
+    var name = "Coca-Cola";
+    var price = 4;
+
+    document.getElementById("drinkname").innerHTML = name;
+    document.getElementById("drinkprice").innerHTML = "£" + price;
+}
+
+// Fanta
+document.querySelector('#fanta').onclick = () =>{
+    var name = "Fanta";
+    var price = 4;
+
+    document.getElementById("drinkname").innerHTML = name;
+    document.getElementById("drinkprice").innerHTML = "£" + price;
+}
+
+// Dr.Pepper
+document.querySelector('#drpepper').onclick = () =>{
+    var name = "Dr.Pepper";
+    var price = 5;
+
+    document.getElementById("drinkname").innerHTML = name;
+    document.getElementById("drinkprice").innerHTML = "£" + price;
+}
+
+// Irn Bru
+document.querySelector('#irnbru').onclick = () =>{
+    var name = "Irn Bru";
+    var price = 5;
+
+    document.getElementById("drinkname").innerHTML = name;
+    document.getElementById("drinkprice").innerHTML = "£" + price;
+}
+
+// Sprite
+document.querySelector('#sprite').onclick = () =>{
+    var name = "Sprite";
+    var price = 4;
+
+    document.getElementById("drinkname").innerHTML = name;
+    document.getElementById("drinkprice").innerHTML = "£" + price;
+}

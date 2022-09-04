@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Unfolded Calzone</title>
+
+        <!-- font awesome cdn link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+        <!-- custom css file link -->
+        <link rel="stylesheet" href="pizzastyling">
+    </head>
+    <body>
+        <!-- Header section starts -->
+
+        <header>
+            <a href="file:///C:/Users/Marios/Desktop/Work/Capita/Novus%20Program/PizzaOrderingWebsite/homepage"><img class="logo" src="images/49-498849_logo-suprem-pizza-logos-de-pizzerias-png.png" alt="Pizza Logo"></a>
+
+            <div id="menu-bar" class="fas fa-bars"></div>
+
+            <nav class="navbar">
+                <a href="file:///C:/Users/Marios/Desktop/Work/Capita/Novus%20Program/PizzaOrderingWebsite//homepage">Home</a>
+                <a href="file:///C:/Users/Marios/Desktop/Work/Capita/Novus%20Program/PizzaOrderingWebsite/orderpage">Menu</a>
+                <a href="file:///C:/Users/Marios/Desktop/Work/Capita/Novus%20Program/PizzaOrderingWebsite/checkoutpage">Checkout</a>
+                <div id="cart-btn" class="fas fa-shopping-cart">0</div>
+            </nav>
+        </header>
+
+        <!-- Header section ends -->
+
+        <!-- Checkout section begins -->
+
+        <section class="checkout" id="checkout">
+
+            <h1 class="heading"> <span>Order</span> now</h1>
+
+            <div class="row">
+                <form action="">
+
+                    <div class="inputBox">
+                        <input type="text" placeholder="name *">
+                        <input type="email" placeholder="email *">
+                        <input type="text" placeholder="number *">
+                        <input type="text" placeholder="food name">
+                        <input type="text" placeholder="Address 1 *">
+                        <input type="text" placeholder="Address 2">
+                        <input type="text" placeholder="Postcode *">
+                    </div>
+
+                    <input type="submit" value="order now" class="btn">
+
+                </form>
+            </div>
+        </section>
+
+        <!-- Checkout section ends -->
+
+        <!-- Footer section starts -->
+
+        <section class="footer">
+
+            <div class="share">
+                <a href="https://twitter.com/MHWaller" class="btn" target="_blank">twitter</a>
+                <a href="https://www.instagram.com/marioshwaller/" class="btn" target="_blank">instagram</a>
+                <a href="https://www.linkedin.com/in/marios-havouzaris-waller-927218214/" class="btn" target="_blank">linkedin</a>
+                <a href="file:///C:/Users/Marios/Desktop/Work/Capita/Novus%20Program/PizzaOrderingWebsite/contactpage" class="btn" target="_blank">contact us</a>
+            </div>
+
+        </section>
+
+        <!-- Footer section ends -->
+
+        <!-- Shopping Cart -->
+
+        <div class="shopping-cart">
+
+            <section class="basket">
+
+                    <button id="close-cart"><span>close</span></button>
+
+                    <div class="box">
+                        <a href="#" class="fas fa-times"></a>
+                        <img src="images/margherita.webp" alt="test">
+                        <div class="content">
+                            <p id="pizzaname"></p>
+                            <span id="pizzaprice"></span>
+                            <span id="pizzasize"></span>
+                            <form action="" method="post">
+                                <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                                <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <a href="#" class="fas fa-times"></a>
+                        <img src="images/DoughBalls.png" alt="test">
+                        <div class="content">
+                            <p id="startername"></p>
+                            <span id="starterprice"></span>
+                            <form action="" method="post">
+                                <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                                <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <a href="#" class="fas fa-times"></a>
+                        <img src="images/cheesecake.jpg" alt="test">
+                        <div class="content">
+                            <p id="dessertname"></p>
+                            <span id="dessertprice"></span>
+                            <form action="" method="post">
+                                <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                                <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <a href="#" class="fas fa-times"></a>
+                        <img src="images/coke.png" alt="test">
+                        <div class="content">
+                            <p id="drinkname"></p>
+                            <span id="drinkprice"></span>
+                            <form action="" method="post">
+                                <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                                <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                            </form>
+                        </div>
+                    </div>
+                
+                    <a href="#order" class="btn">Order Now</a>
+            </section>
+
+        </div>
+
+        <!-- Loader -->
+        <div class="loader-container">
+            <img src="images/Pizza Loader - Imgur.gif" alt="">
+        </div>
+
+
+        <!-- custom js file link -->
+        <script src="pizzascript"></script>
+
+    </body>
+</html>

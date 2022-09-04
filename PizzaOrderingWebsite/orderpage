@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Unfolded Calzone</title>
+
+        <!-- font awesome cdn link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+        <!-- custom css file link -->
+        <link rel="stylesheet" href="pizzastyling">
+    </head>
+    <body>
+        <!-- Header section starts -->
+
+        <header>
+            <a href="file:///C:/Users/Marios/Desktop/Work/Capita/Novus%20Program/PizzaOrderingWebsite/homepage"><img class="logo" src="images/49-498849_logo-suprem-pizza-logos-de-pizzerias-png.png" alt="Pizza Logo"></a>
+
+            <div id="menu-bar" class="fas fa-bars"></div>
+
+            <nav class="navbar">
+                <a href="file:///C:/Users/Marios/Desktop/Work/Capita/Novus%20Program/PizzaOrderingWebsite//homepage">Home</a>
+                <a href="file:///C:/Users/Marios/Desktop/Work/Capita/Novus%20Program/PizzaOrderingWebsite/orderpage">Menu</a>
+                <a href="file:///C:/Users/Marios/Desktop/Work/Capita/Novus%20Program/PizzaOrderingWebsite/checkoutpage">Checkout</a>
+                <button id="cart-btn" class="fas fa-shopping-cart">0</button>
+            </nav>
+        </header>
+
+        <!-- Header section ends -->
+
+        <!-- Order section begins -->
+
+        <section class="order" id="order">
+            <h1 class="heading">Our <span>Pizzas</span></h1>
+            <div class="box-container">
+
+                <div class="box">
+                    <span class="price"> £10 - £20 </span>
+                    <img src="images/margherita.webp" alt="Margherita">
+                    <h3>Margherita</h3>
+                    <p>Mozarrella, tomato and basil. The classic.</p>
+                    <button id="margherita" class="btn">add to basket</button>
+                    <div class="inputBox">
+                        <select id="margheritasize" name="method" class="box">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="extraLarge">Extra Large</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £12 - £22 </span>
+                    <img src="images/pepperoni.webp" alt="Pepperoni">
+                    <h3>Pepperoni</h3>
+                    <p>Pepperoni. A Movie time staple.</p>
+                    <button id="pepperoni" class="btn">add to basket</button>
+                    <div class="inputBox">
+                        <select id="pepperonisize" name="method" class="box">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="extraLarge">Extra Large</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £12 - £22 </span>
+                    <img src="images/hawaiian.jpg" alt="Hawaiian">
+                    <h3>Hawaiian</h3>
+                    <p>Ham with the controversial pineapple.</p>
+                    <button id="hawaiian" class="btn">add to basket</button>
+                    <div class="inputBox">
+                        <select id="hawaiiansize" name="method" class="box">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="extraLarge">Extra Large</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £12 - £22 </span>
+                    <img src="images/mushroom.jpg" alt="Mushroom">
+                    <h3>"The Shroom"</h3>
+                    <p>Mushrooms. Sometimes nothing beats simple.</p>
+                    <button id="mushroom" class="btn">add to basket</button>
+                    <div class="inputBox">
+                        <select id="mushroomsize"  name="method" class="box">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="extraLarge">Extra Large</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £13 - £23 </span>
+                    <img src="images/halloumiparmaham.jpg" alt="HalloumiHam">
+                    <h3>"The Avenger Special"</h3>
+                    <p>halloumi and parma ham.</p>
+                    <button id="halloumiparmaham" class="btn">add to basket</button>
+                    <div class="inputBox">
+                        <select id="halloumiparmahamsize" name="method" class="box">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="extraLarge">Extra Large</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £13 - £23 </span>
+                    <img src="images/Veggie-Pizza-8.jpg" alt="Veggie">
+                    <h3>"The Caerbannog Classic"</h3>
+                    <p>Olives, peppers, red onion, mushrooms and basil.</p>
+                    <button id="veggie" class="btn">add to basket</button>
+                    <div class="inputBox">
+                        <select id="veggiesize" name="method" class="box">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="extraLarge">Extra Large</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £12 - £22 </span>
+                    <img src="images/anchovies.jpg" alt="anchovies">
+                    <h3>"The Meg"</h3>
+                    <p>anchovies, capers and parsley.</p>
+                    <button id="anchovies" class="btn">add to basket</button>
+                    <div class="inputBox">
+                        <select id="anchovysize" name="method" class="box">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="extraLarge">Extra Large</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £14 - £24 </span>
+                    <img src="images/meatlover.jpg" alt="meatlover">
+                    <h3>"The Cloudy with a Chance"</h3>
+                    <p>pepperoni, sausage, bacon and ham.</p>
+                    <button id="meatlover" class="btn">add to basket</button>
+                    <div class="inputBox">
+                        <select id="meatloversize" name="method" class="box">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="extraLarge">Extra Large</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £12 - £22 </span>
+                    <img src="images/normalchicken.jpg" alt="normalchicken">
+                    <h3>"The Chicken Run"</h3>
+                    <p>chicken and tomato.</p>
+                    <button id="normalchicken" class="btn">add to basket</button>
+                    <div class="inputBox">
+                        <select id="normalchickensize" name="method" class="box">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="extraLarge">Extra Large</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £13 - £23 </span>
+                    <img src="images/bbqchicken.jpg" alt="bbqchicken">
+                    <h3>"The Hot Fuzz"</h3>
+                    <p>chicken, barbeque sauce, red onion and jalapenos.</p>
+                    <button id="bbqchicken" class="btn">add to basket</button>
+                    <div class="inputBox">
+                        <select id="bbqchickensize" name="method" class="box">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="extraLarge">Extra Large</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £14 - £24 </span>
+                    <img src="images/mexican.jpg" alt="mexican">
+                    <h3>"The Sicario"</h3>
+                    <p>red onion, tomato, egg, parsley and bacon</p>
+                    <button id="mexican" class="btn">add to basket</button>
+                    <div class="inputBox">
+                        <select id="mexicansize" name="method" class="box">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="extraLarge">Extra Large</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £13 - £23 </span>
+                    <img src="images/greekpizza.jpg" alt="greekpizza">
+                    <h3>"The Mamma Mia"</h3>
+                    <p>feta, olives, tomato, artichoke</p>
+                    <button id="greekpizza" class="btn">add to basket</button>
+                    <div class="inputBox">
+                        <select id="greekpizzasize" name="method" class="box">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="extraLarge">Extra Large</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £13 - £23 </span>
+                    <img src="images/hammushroompepper.jpg" alt="hammushroompepper">
+                    <h3>"The One True Ring"</h3>
+                    <p>Ham, mushroom, rocket and pepper</p>
+                    <button id="hammushroompepper" class="btn">add to basket</button>
+                    <div class="inputBox">
+                        <select id="hammushroompeppersize" name="method" class="box">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="extraLarge">Extra Large</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £15 - £25 </span>
+                    <img src="images/carbonara.webp" alt="carbonara">
+                    <h3>"The Little Italy"</h3>
+                    <p>Parmesan, egg and guanciale</p>
+                    <button id="carbonara" class="btn">add to basket</button>
+                    <div class="inputBox">
+                        <select id="carbonarasize" name="method" class="box">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="extraLarge">Extra Large</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £14 - £24 </span>
+                    <img src="images/5050.png" alt="5050">
+                    <h3>Half and half</h3>
+                    <p>Choose a type of pizza for either half of this pizza.</p>
+                    <button id="halfhalf" class="btn">add to basket</button>
+                    <div class="inputBox">
+                        <select id="halfhalfsize" name="method" class="box">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="extraLarge">Extra Large</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h1 class="heading">Our <span>Starters</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <span class="price"> £12 </span>
+                    <img src="images/garliccheese.jpg" alt="garliccheese">
+                    <h3>Garlic Bread with Cheese</h3>
+                    <button id="garliccheese" class="btn">add to basket</button>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £6 </span>
+                    <img src="images/DoughBalls.png" alt="doughballs">
+                    <h3>Doughballs</h3>
+                    <button id="doughballs" class="btn">add to basket</button>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £8 </span>
+                    <img src="images//Easy-Chicken-Bites.webp" alt="chickenbites">
+                    <h3>Chicken Bites</h3>
+                    <button id="chickenbites" class="btn">add to basket</button>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £7 </span>
+                    <img src="images/wedges.jpg" alt="wedges">
+                    <h3>Wedges</h3>
+                    <button id="wedges" class="btn">add to basket</button>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £8 </span>
+                    <img src="images/sweetwedges.jpg" alt="sweetpotatowedges">
+                    <h3>Sweet Potato Wedges</h3>
+                    <button id="sweetpotatowedges" class="btn">add to basket</button>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h1 class="heading">Our <span>Desserts</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <span class="price"> £10 </span>
+                    <img src="images/cheesecake.jpg" alt="cheesecake">
+                    <h3>Cheesecake</h3>
+                    <button id="cheesecake" class="btn">add to basket</button>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £6 </span>
+                    <img src="images/carrotcake.jpg" alt="carrotcake">
+                    <h3>Carrot Cake</h3>
+                    <button id="carrotcake" class="btn">add to basket</button>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £8 </span>
+                    <img src="images/lavacake.webp" alt="lavacake">
+                    <h3>Lava Cake</h3>
+                    <button id="lavacake" class="btn">add to basket</button>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £7 </span>
+                    <img src="images/cookies.jpg" alt="cookies">
+                    <h3>Cookies</h3>
+                    <button id="cookies" class="btn">add to basket</button>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £8 </span>
+                    <img src="images/tiramisu.jpg" alt="tiramisu">
+                    <h3>Tiramisu</h3>
+                    <button id="tiramisu" class="btn">add to basket</button>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h1 class="heading">Our <span>Drinks</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <span class="price"> £4 </span>
+                    <img src="images/coke.png" alt="coke">
+                    <h3>Coca-Cola</h3>
+                    <button id="coke" class="btn">add to basket</button>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £4 </span>
+                    <img src="images/fanta.png" alt="fanta">
+                    <h3>Fanta</h3>
+                    <button id="fanta" class="btn">add to basket</button>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £5 </span>
+                    <img src="images/Dr.Pepper.png" alt="drpepper">
+                    <h3>Dr. Pepper</h3>
+                    <button id="drpepper" class="btn">add to basket</button>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £5 </span>
+                    <img src="images/irnbru.webp" alt="irnbru">
+                    <h3>Irn Bru</h3>
+                    <button id="irnbru" class="btn">add to basket</button>
+                </div>
+
+                <div class="box">
+                    <span class="price"> £4 </span>
+                    <img src="images/sprite.png" alt="sprite">
+                    <h3>Sprite</h3>
+                    <button id="sprite" class="btn">add to basket</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order section ends -->
+
+        <!-- Footer section starts -->
+
+        <section class="footer">
+
+            <div class="share">
+                <a href="https://twitter.com/MHWaller" class="btn" target="_blank">twitter</a>
+                <a href="https://www.instagram.com/marioshwaller/" class="btn" target="_blank">instagram</a>
+                <a href="https://www.linkedin.com/in/marios-havouzaris-waller-927218214/" class="btn" target="_blank">linkedin</a>
+                <a href="file:///C:/Users/Marios/Desktop/Work/Capita/Novus%20Program/PizzaOrderingWebsite/contactpage" class="btn" target="_blank">contact us</a>
+            </div>
+
+        </section>
+
+        <!-- Footer section ends -->
+
+        <!-- Shopping Cart -->
+
+        <div class="shopping-cart">
+
+            <section class="basket">
+
+                    <button id="close-cart"><span>close</span></button>
+
+                    <div class="box">
+                        <a href="#" class="fas fa-times"></a>
+                        <img src="images/margherita.webp" alt="test">
+                        <div class="content">
+                            <p id="pizzaname"></p>
+                            <span id="pizzaprice"></span>
+                            <span id="pizzasize"></span>
+                            <form action="" method="post">
+                                <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                                <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <a href="#" class="fas fa-times"></a>
+                        <img src="images/DoughBalls.png" alt="test">
+                        <div class="content">
+                            <p id="startername"></p>
+                            <span id="starterprice"></span>
+                            <form action="" method="post">
+                                <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                                <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <a href="#" class="fas fa-times"></a>
+                        <img src="images/cheesecake.jpg" alt="test">
+                        <div class="content">
+                            <p id="dessertname"></p>
+                            <span id="dessertprice"></span>
+                            <form action="" method="post">
+                                <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                                <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <a href="#" class="fas fa-times"></a>
+                        <img src="images/coke.png" alt="test">
+                        <div class="content">
+                            <p id="drinkname"></p>
+                            <span id="drinkprice"></span>
+                            <form action="" method="post">
+                                <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                                <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                            </form>
+                        </div>
+                    </div>
+                
+                    <a href="#order" class="btn">Order Now</a>
+            </section>
+
+        </div>
+
+        <!-- Loader -->
+        <div class="loader-container">
+            <img src="images/Pizza Loader - Imgur.gif" alt="">
+        </div>
+
+
+        <!-- custom js file link -->
+        <script src="pizzascript"></script>
+
+    </body>
+</html>
